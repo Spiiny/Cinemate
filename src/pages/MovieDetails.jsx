@@ -29,7 +29,7 @@ export const MovieDetails = () => {
           <h1 className="text-4xl font-bold text-center lg:text-left">{movie.original_title}</h1>
           <p className="text-lg my-5">{movie.overview}</p>
           {movie.genres ? (
-            <p className="my-9 text-lg">
+            <p className="my-9 text-lg flex flex-wrap gap-y-4">
             {movie.genres.map((item)=>(
               <span className="border border-gray-600 rounded px-2 py-2 mr-4">{item.name}</span>
             ))}

@@ -15,7 +15,7 @@ export const MovieDetails = () => {
     setMovie(json);
   }
     getMovie();
-  },[]);
+  },[params.id]);
   const url = movie.poster_path ? `https://image.tmdb.org/t/p/w500/${movie.poster_path}` : backup;
   useTitle(movie.title);
 
